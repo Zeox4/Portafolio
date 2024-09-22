@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>webs</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+   
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="obras-fisicas">
+            <div class="grid-container">
+
+                <a href="https://zeox4.github.io/OxxO-fi/" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/web/oxxo1.png" alt="Esculturas" class="clickable-image">
+                        <div class="image-title">Oxx0-fi</div>
+                        <div class="image-description">Web interactiva mapeando y vinculando canciones a oxxos.<br> Estado inactiva.</div>
+                    </div>
+                </a>
+
+                <a href="https://zeox4.github.io/Lovely-Stalking/" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/web/lov1.png" alt="Instalaciones" class="clickable-image">
+                        <div class="image-title">Lovely Stalking</div>
+                        <div class="image-description">Web de instalaciones artísticas interactivas.</div>
+                    </div>
+                </a>
+
+                <a href="https://maggie73m.github.io/Fragmentos/" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/web/fragmentos.png" alt="Dibujos físicos" class="clickable-image">
+                        <div class="image-title">Fragmentos de una búsqueda</div>
+                        <div class="image-description">Web de instalaciones artísticas interactivas.</div>
+                    </div>
+                </a>
+
+                <a href="https://zeox4.github.io/tourret/" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/web/tourret.png" alt="Dibujos físicos" class="clickable-image">
+                        <div class="image-title">Síndrome de Tourette</div>
+                        <div class="image-description">Web divulgativa sobre el síndrome de Tourette.</div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content-container">
+            <button id="modal-close-btn" class="modal-close-btn">X</button>
+            <img id="modal-image" class="modal-content" src="" alt="Imagen ampliada">
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+
+</html>

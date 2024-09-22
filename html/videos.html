@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+    <style>
+        /* Estilos para el grid de la galería */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .grid-item {
+            background-color: #302929;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Tamaño ajustado de los videos */
+        video, iframe {
+            width: 100%;
+            height: fit-content;
+            max-height: 400px; /* Mantener un tamaño más pequeño para los videos */
+            border-radius: 8px;
+        }
+
+        .image-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .image-description {
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <div class="grid-container">
+                <!-- Video local -->
+                <div class="grid-item">
+                    <video controls class="clickable-video">
+                        <source src="../assets/obra digital/videos/videomaping.mp4" type="video/mp4">
+                        Tu navegador no soporta la reproducción de video.
+                    </video>
+                    <div class="image-title">Iglesia.</div>
+                    <div class="image-description">Videomaping sobre una iglesia en alusión al espíritu mexicano.</div>
+                </div>
+
+                <!-- Video desde Vimeo -->
+                <div class="grid-item">
+                    <iframe src="https://player.vimeo.com/video/1011513043" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width:100%;height:200px;" title="LA ultima bruja del surrealismo"></iframe>
+                    <div class="image-title">La última bruja del surrealismo</div>
+                    <div class="image-description">Obra en alusión al encierro que vivió Leonora Carrington.</div>
+                </div>
+
+                <!-- Otro video desde Vimeo -->
+                <div class="grid-item">
+                    <iframe src="https://player.vimeo.com/video/1011512717" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width:100%;height:200px;" title="iNCONDICIO@MAR"></iframe>
+                    <div class="image-title">INcondicio@amar</div>
+                    <div class="image-description">Obra multidisciplinaria sobre el poema del ajedrez.</div>
+                </div>
+
+                <!-- Otro video desde Vimeo -->
+                <div class="grid-item">
+                    <iframe src="https://player.vimeo.com/video/749044465" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" style="width:100%;height:200px;" title="Desvanecimiento depresivo."></iframe>
+                    <div class="image-title">Desvanecimiento depresivo.</div>
+                    <div class="image-description">Obra multimedia sobre la memoria perdida a causa de la depresión.</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+
+</html>

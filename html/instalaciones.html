@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instalaciones artísticas</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <div class="grid-container">
+
+                <a href="https://paulina1273.github.io/tresecos/" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/instala/terr1.jpg" alt="Instalaciones" class="clickable-image">
+                        <div class="image-title">Proyecto 3 ecos</div>
+                        <div class="image-description">Proyecto colaborativo 3 ecos.</div>
+                    </div>
+                </a>
+
+                <div class="grid-item" onclick="openPopup('3 Ecos', 'Instalaciones.')">
+                    <img src="../assets/instala/terr2.jpg" alt="Instalaciones" class="clickable-image">
+                    <div class="image-title">Proyecto 3 ecos</div>
+                    <div class="image-description">Proyecto colaborativo 3 ecos.</div>
+                </div>
+
+                <div class="grid-item" onclick="openPopup('3 Ecos', 'Instalaciones.')">
+                    <img src="../assets/instala/terr3.jpg" alt="Instalaciones" class="clickable-image">
+                    <div class="image-title">Proyecto 3 ecos</div>
+                    <div class="image-description">Proyecto colaborativo 3 ecos.</div>
+                </div>
+
+                <div class="grid-item" onclick="openPopup('3 Ecos', 'Instalaciones.')">
+                    <img src="../assets/instala/terr4.jpg" alt="Instalaciones" class="clickable-image">
+                    <div class="image-title">Proyecto 3 ecos</div>
+                    <div class="image-description">Proyecto colaborativo 3 ecos.</div>
+                </div>
+
+               
+                
+                    <div class="grid-item">
+                        <video controls class="clickable-video">
+                            <source src="../assets/instala/com1.mp4" type="video/mp4">
+                            Tu navegador no soporta la reproducción de video.
+                        </video>
+                        <div class="image-title">Luz en la obscuridad corporal</div>
+                        <div class="image-description">Instalación artistica  de la obra Luz en la Obscuridad corporal.</div>
+
+                    </div>
+              
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content-container">
+            <button id="modal-close-btn" class="modal-close-btn">X</button>
+            <img id="modal-image" class="modal-content" src="" alt="Imagen ampliada">
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+
+</html>

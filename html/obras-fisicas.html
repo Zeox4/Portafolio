@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras-Fisicas</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="obras-fisicas">
+            <div class="grid-container">
+
+                <a href="../html/esculturas.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/obra fisica/escul/foto2.jpg" alt="Esculturas" class="clickable-image">
+                        <div class="image-title">Esculturas</div>
+                        <div class="image-description">Obras escultoricas.</div>
+                    </div>
+                </a>
+
+                <a href="../html/instalaciones.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/instala/terr1.jpg" alt="Instalaciones" class="clickable-image">
+                        <div class="image-title">Instalaciones</div>
+                        <div class="image-description">Instalaciones artisticas.</div>
+                    </div>
+                </a>
+
+                <a href="../html/dibujos fisicos.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/obra fisica/fisicos/justlock.png" alt="Dibujos fisicos" class="clickable-image">
+                        <div class="image-title">Dibujos fisicos.</div>
+                        <div class="image-description">Dibujos en formato fisico.</div>
+                    </div>
+                </a>
+
+                          
+            </div>
+        </section>
+    </main>
+
+     <!-- Modal para ver imágenes en grande -->
+     <div id="image-modal" class="modal">
+        <div class="modal-content-container">
+            <button id="modal-close-btn" class="modal-close-btn">X</button>
+            <img id="modal-image" class="modal-content" src="" alt="Imagen ampliada">
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras-Digitales</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="obras-fisicas">
+            <div class="grid-container">
+
+                <a href="../html/renders.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/obra digital/renders/ojoyos.png" alt="Renders" class="clickable-image">
+                        <div class="image-title">Renders</div>
+                        <div class="image-description">Rendedisados 3D</div>
+                    </div>
+                </a>
+
+                <a href="../html/videos.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/foto/desv7.png" alt="Videos" class="clickable-image">
+                        <div class="image-title">Videos</div>
+                        <div class="image-description">Videos.</div>
+                    </div>
+                </a>
+
+                <a href="../html/dibujo digital.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/obra digital/dibujos/meme1.png" alt="Dibujos digitales" class="clickable-image">
+                        <div class="image-title">Dibujos digitales.</div>
+                        <div class="image-description">Dibujos en formato digital.</div>
+                    </div>
+                </a>
+
+                <a href="../html/web.html" target="_blank">
+                    <div class="grid-item">
+                        <img src="../assets/web/susp.png" alt="paginas web" class="clickable-image">
+                        <div class="image-title">Paginas web.</div>
+                        <div class="image-description">paginas web realizadas.</div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content-container">
+            <button id="modal-close-btn" class="modal-close-btn">X</button>
+            <img id="modal-image" class="modal-content" src="" alt="Imagen ampliada">
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+</html>

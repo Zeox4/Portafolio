@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes - Zeox</title>
+    <link rel="stylesheet" href="../assets/stylos.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="../index.html">Zeox</a></h1>
+        </div>
+        <nav>
+            <ul>
+                <li class="dropdown">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/bio.html">Biografía</a></li>
+                        <li><a href="../html/redes.html">Redes Sociales</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="galeria">
+            <div class="grid-container">
+
+                <div class="grid-item" onclick="openPopup('claustro', 'Dibujo fisico.')">
+                    <img src="../assets/obra fisica/fisicos/claustro.jpg" alt="dibujo fisico" class="clickable-image">
+                    <div class="image-title">Claustro</div>
+                    <div class="image-description">Dibujo fisico con alución a la claustrofofia.</div>
+                </div>
+
+                <div class="grid-item" onclick="openPopup('Just luck', 'Dibujo fisico.')">
+                    <img src="../assets/obra fisica/fisicos/justlock.png" alt="dibujo fisico" class="clickable-image">
+                    <div class="image-title">Just Luck.</div>
+                    <div class="image-description">Dibujo fisico  tintas.</div>
+                </div>
+
+                <div class="grid-item" onclick="openPopup('Craneos', 'Dibujo fisico.')">
+                    <img src="../assets/obra fisica/fisicos/modificada.jpg" alt="dibujo fisico" class="clickable-image">
+                    <div class="image-title">camilo.</div>
+                    <div class="image-description">Dibujo fisico.</div>
+                </div>
+
+                            </div>
+        </section>
+    </main>
+
+    <!-- Modal para ver imágenes en grande -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content-container">
+            <button id="modal-close-btn" class="modal-close-btn">X</button>
+            <img id="modal-image" class="modal-content" src="" alt="Imagen ampliada">
+            <div id="modal-title" class="modal-title"></div>
+            <div id="modal-description" class="modal-description"></div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2024 Zeox. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="../assets/scopt.js"></script>
+</body>
+
+</html>
