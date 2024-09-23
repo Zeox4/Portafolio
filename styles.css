@@ -34,13 +34,10 @@ header {
         background-position: 0% 50%;
     }
 }
+
 .logo a {
     text-decoration: none;
     color: inherit;
-}
-
-.logo a:hover {
-    cursor: pointer;
 }
 
 .logo h1 {
@@ -82,11 +79,6 @@ nav ul li a {
     z-index: 1001;
 }
 
-.dropdown-menu li {
-    margin: 0;
-    padding: 5px 0;
-}
-
 .dropdown-menu li a {
     color: #eaeaea;
     font-size: 16px;
@@ -96,31 +88,14 @@ nav ul li a {
     display: block;
 }
 
-.dropdown-menu li a:hover {
-    color: #c084fc;
-}
-
 main {
     padding: 120px 20px 20px 20px;
 }
 
-.container {
-    position:relative;
-    background-color: #1e1e1e;
-    padding-bottom: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    max-width: 1200px;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
+/* Cuadrícula para la sección de portafolio */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); /* Cuatro columnas para pantallas grandes */
     gap: 20px;
 }
 
@@ -172,18 +147,11 @@ main {
     background: rgba(0, 0, 0, 0.6);
 }
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-header, footer {
-    text-align: center;
-}
-
 footer {
     margin-top: 20px;
     font-size: 0.9em;
     color: #888;
+    text-align: center;
 }
 
 /* Modal background */
@@ -220,131 +188,29 @@ footer {
     color: #eaeaea;
 }
 
-.modal-content {
-    display: block;
-    margin: 60px auto;
-}
-
 .modal-content:hover {
     cursor: pointer;
 }
-/* redes sociales*/
-.social-section {
-    background: linear-gradient(135deg, #2f2f2f, #1c1c1e); /* Fondo degradado */
-    padding: 50px;
-    text-align: center;
-}
 
-.social-cascade {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.social-cascade li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px; /* Mayor espacio entre íconos */
-}
-
-.social-cascade li img {
-    width: 80px; /* Tamaño más grande del ícono */
-    height: 80px;
-    margin-right: 20px;
-    transition: transform 0.3s ease; /* Animación suave */
-}
-
-.social-cascade li:hover img {
-    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
-}
-
-.social-cascade li span {
-    font-size: 1.5rem; /* Texto más grande */
-    color: #eaeaea;
-    transition: color 0.3s ease;
-}
-
-.social-cascade li:hover span {
-    color: #c084fc; /* Cambio de color del texto al hacer hover */
-}
-
-.social-cascade li a {
-    text-decoration: none;
-    color: inherit;
-    display: flex;
-    align-items: center;
-}
-
-.social-cascade li:hover {
-    box-shadow: 0 10px 20px rgba(192, 132, 252, 0.3); /* Sombra al pasar el mouse */
-    transition: all 0.3s ease;
-}
-
-/* Adaptación para pantallas pequeñas */
-@media (max-width: 600px) {
-    .social-cascade li {
-        padding: 10px;
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* Dos columnas en tablets */
     }
 }
 
-/* biografia */
-.biografia-section {
-    background-color: #1c1c1e;
-    padding: 50px 20px;
-    color: #eaeaea;
-    text-align: center;
-}
+@media (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
 
-.biografia-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #2f2f2f;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
+    .grid-item img {
+        object-fit: contain; /* Asegurar que la imagen mantenga su proporción */
+        width: 100%;
+        height: auto;
+    }
 
-.biografia-titulo {
-    font-family: 'Georgia', serif;
-    font-size: 3rem;
-    margin-bottom: 20px;
-    color: #c084fc; /* Color para resaltar */
-}
-
-.biografia-texto {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.2rem;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    text-align: justify;
-}
-
-.biografia-imagen {
-    margin-top: 30px;
-    text-align: center;
-}
-
-.biografia-imagen img {
-    width: 50%;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
-}
-
-.biografia-imagen-descripcion {
-    font-size: 0.9rem;
-    color: #888;
-    margin-top: 10px;
-}
-
-.biografia-container p::first-letter {
-    font-size: 1.5rem;
-    color: #c084fc;
-    font-weight: bold;
-}
-
-/* Efecto hover en la imagen */
-.biografia-imagen img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
+    .modal-content {
+        width: 90%; /* Modal más pequeño en móviles */
+    }
 }
