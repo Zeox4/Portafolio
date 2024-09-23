@@ -214,3 +214,117 @@ footer {
         width: 90%; /* Modal más pequeño en móviles */
     }
 }
+/* redes sociales*/
+.social-section {
+    background: linear-gradient(135deg, #2f2f2f, #1c1c1e); /* Fondo degradado */
+    padding: 50px;
+    text-align: center;
+}
+
+.social-cascade {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-cascade li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px; /* Mayor espacio entre íconos */
+}
+
+.social-cascade li img {
+    width: 80px; /* Tamaño más grande del ícono */
+    height: 80px;
+    margin-right: 20px;
+    transition: transform 0.3s ease; /* Animación suave */
+}
+
+.social-cascade li:hover img {
+    transform: scale(1.2); /* Efecto de aumento al pasar el mouse */
+}
+
+.social-cascade li span {
+    font-size: 1.5rem; /* Texto más grande */
+    color: #eaeaea;
+    transition: color 0.3s ease;
+}
+
+.social-cascade li:hover span {
+    color: #c084fc; /* Cambio de color del texto al hacer hover */
+}
+
+.social-cascade li a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.social-cascade li:hover {
+    box-shadow: 0 10px 20px rgba(192, 132, 252, 0.3); /* Sombra al pasar el mouse */
+    transition: all 0.3s ease;
+}
+
+
+/* biografia */
+.biografia-section {
+    background-color: #1c1c1e;
+    padding: 50px 20px;
+    color: #eaeaea;
+    text-align: center;
+}
+
+.biografia-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #2f2f2f;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.biografia-titulo {
+    font-family: 'Georgia', serif;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #c084fc; /* Color para resaltar */
+}
+
+.biografia-texto {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.biografia-imagen {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.biografia-imagen img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(192, 132, 252, 0.3);
+}
+
+.biografia-imagen-descripcion {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 10px;
+}
+
+.biografia-container p::first-letter {
+    font-size: 1.5rem;
+    color: #c084fc;
+    font-weight: bold;
+}
+
+/* Efecto hover en la imagen */
+.biografia-imagen img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
