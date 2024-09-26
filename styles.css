@@ -67,8 +67,14 @@ nav ul li a {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #333;
+    color: #eaeaea; /* Cambia el color a un tono claro para mejor contraste */
     font-weight: bold;
+    transition: color 0.3s ease; /* Añadir transición para efectos suaves */
+}
+
+/* Efecto hover para el menú */
+nav ul li a:hover {
+    color: #c084fc; /* Cambia a un color resaltante al pasar el ratón, por ejemplo, morado claro */
 }
 
 /* Estilo del menú desplegable */
